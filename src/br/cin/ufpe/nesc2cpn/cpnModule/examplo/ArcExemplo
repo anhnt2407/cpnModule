@@ -1,0 +1,48 @@
+// --------------------------------------------------------------   EXAMPLO   //
+
+<arc id="ID89833" orientation="PtoT" order="1">
+        <posattr x="0,000000" y="-0,000000"/>
+        <fillattr colour="White" pattern="" filled="false"/>
+        <lineattr colour="Black" thick="1" type="Solid"/>
+        <textattr colour="Black" bold="false"/>
+        <arrowattr headsize="1,000000" currentcyckle="2"/>
+        <transend idref="ID89784"/>
+        <placeend idref="ID89747"/>
+
+        <bendpoint id="ID96125" serial="1">                          <!-- Dica: CPNItem.java -->
+          <posattr x="116,000000" y="135,000000"/>
+          <fillattr colour="White" pattern="Solid" filled="false"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr colour="Black" bold="false"/>
+        </bendpoint>
+
+        <annot id="ID89834">                                         <!-- Dica: CPNItem.java -->
+          <posattr x="130,000000" y="143,000000"/>
+          <fillattr colour="White" pattern="Solid" filled="false"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr colour="Black" bold="false"/>
+          <text tool="CPN Tools" version="2.3.4">i</text>
+        </annot>
+
+      </arc>
+
+// --------------------------------------------------------------       DTD   //
+
+       <arc id="..." orientation="TtoP|PtoT|BOTHDIR" order="...">  <!-- arc, order can probably just be set to 0 -->
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <arrowattr headsize="1.2" currentcycle="2"/>
+         <transend idref="..."/> <!-- id of transition of this arc -->
+         <placeend idref="..."/> <!-- if of place of this arc -->
+         <bendpoint id="..." serial="..."> <!-- zero or more of  these, numbered from 1 (using serial), only posattr is used -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+         </bendpoint>
+         <annot id="..."> <!-- arc expression -->
+           <!-- like type in place -->
+         </code>
+       </arc>

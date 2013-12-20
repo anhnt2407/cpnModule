@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ExemploCpnTools.xml
+    Created on : 10 de Outubro de 2011, 10:13
+    Author     : avld
+    Description:
+        Purpose of the document follows.
+-->
+
+<workspaceElements>
+   <generator .../>
+   <cpnet>
+     <globbox>
+       ...
+     </globbox>
+     <page id="...">
+       <pageattr name="...">
+       <place id="...">
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <text>...</text> <!-- name -->
+         <ellipse .../> <!-- sets width and height -->
+         <token .../> <!-- position of round no of tokens -->
+         <marking .../> <!-- position (and whether hidden) of rectangular description of current marking -->
+         <type> <!-- color set -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+           <text>...</text>
+         </type>
+         <initmark> <!-- initial marking -->
+           <!-- like type -->
+         </initmark>
+         <fusioninfo id="..." name="..."> <!-- omit if not fusion  place -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+         </fusioninfo>
+       </place>
+       <trans id="..." explicit="false">
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <text>...</text> <!-- name -->
+         <box .../> <!-- sets width and height -->
+         <subst subpage="..." portsock="..."> <!-- omit if not  substitution transition; check example for exact format -->
+           <subpageinfo id="..." name="..."> <!-- position of small blue hierarchy tag-->
+             <posattr .../> <!-- position -->
+             <fillattr .../> <!-- fill color -->
+             <lineattr .../> <!-- line width and color -->
+             <textattr .../> <!-- font and text color -->
+           </subpageinfo>
+         </subst>
+         <binding x="..." y="..." /> <!-- position of binding index -->
+         <cond> <!-- guard -->
+           <!-- like type in place -->
+         </cond>
+         <time> <!-- time stamp -->
+           <!-- like type in place -->
+         </time>
+         <code> <!-- action part -->
+           <!-- like type in place -->
+         </code>
+         <channel> <!-- for transition fusion, not used, just copy  from an example -->
+           ..
+         </channel>
+       </trans>
+       <arc id="..." orientation="TtoP|PtoT|BOTHDIR" order="...">  <!-- arc, order can probably just be set to 0 -->
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <arrowattr headsize="1.2" currentcycle="2"/>
+         <transend idref="..."/> <!-- id of transition of this arc -->
+         <placeend idref="..."/> <!-- if of place of this arc -->
+         <bendpoint id="..." serial="..."> <!-- zero or more of  these, numbered from 1 (using serial), only posattr is used -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+         </bendpoint>
+         <annot id="..."> <!-- arc expression -->
+           <!-- like type in place -->
+         </code>
+       </arc>
+     </page>
+     <fusion id="..." name="..."> <!-- description for  each fusion  group -->
+       <fusion_elm idref="..."> <!-- one for each member, id of place  -->
+     </fusion>
+   </cpnet>
+</workspaceElements>

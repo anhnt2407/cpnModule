@@ -1,0 +1,24 @@
+// --------------------------------------------------------------   EXAMPLO   //
+
+
+
+// --------------------------------------------------------------       DTD   //
+
+       <arc id="..." orientation="TtoP|PtoT|BOTHDIR" order="...">  <!-- arc, order can probably just be set to 0 -->
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <arrowattr headsize="1.2" currentcycle="2"/>
+         <transend idref="..."/> <!-- id of transition of this arc -->
+         <placeend idref="..."/> <!-- if of place of this arc -->
+         <bendpoint id="..." serial="..."> <!-- zero or more of  these, numbered from 1 (using serial), only posattr is used -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+         </bendpoint>
+         <annot id="..."> <!-- arc expression -->
+           <!-- like type in place -->
+         </code>
+       </arc>

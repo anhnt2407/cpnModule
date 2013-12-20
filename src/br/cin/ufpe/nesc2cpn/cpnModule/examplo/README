@@ -1,0 +1,58 @@
+README
+------
+
+Davi, você deve fazer uma classe
+
+Referência:
+http://cpntools.org/documentation/old/dtd_for_net_files
+
+http://cpntools.org/cpn2000/sgml_dtd
+http://publib.boulder.ibm.com/infocenter/wsadhelp/v5r1m2/index.jsp?topic=%2Fcom.ibm.etools.dtdeditor.doc%2Ftopics%2Ftgenbens.html
+
+http://cpntools.org/DTD/6/cpn.dtd
+
+
+Alterar o subpageinfoName na classe trans.java. CPNItem o ultimo termo é text e no caso subpageinfoName é o primeiro name
+
+os ids estao como long e deve ser trocado para string
+
+Arquivos comcluidos
+    *page
+    *group
+    *binders
+    *instances
+    *options           
+    *monitorblock       
+    *IndexNode
+    *globbox            
+    *instances          
+    *cpnet              
+    *workspaceElements  
+                  
+Falta concluir
+
+    
+
+Revisão de arquivos no DTD
+page
+group
+         
+monitorblock       
+IndexNode
+globbox            
+      
+cpnet (globbox,page*,fusion*,,,,monitorblock,)              
+
+
+
+Arquivos no DTD Ok
+generator
+workspaceElements
+IndexNode
+options
+binders: 
+    Para diferenciar a estrutura (cpnsheet | textsheet) escrito no dtd, foi atribuido o valor "0" nas variaveis cpnsheetInstance e cpnsheetDecl, que 
+    recebe um id de referencia. Para montar essas estruturas temos que atribuir um valor, diferente de 0, não sera atribuido nenhum id=0 na cpn.
+
+instances:
+    Encontrei uma pequena divergencia entre o DTD e o exemplo, para resolver esse problema coloquei uma estrutura de lista de trans

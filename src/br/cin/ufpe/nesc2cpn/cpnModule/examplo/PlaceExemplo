@@ -1,0 +1,61 @@
+// --------------------------------------------------------------   EXAMPLO   //
+      <place id="ID89764">
+        <posattr x="-5,000000" y="-96,000000"/>
+        <fillattr colour="White" pattern="" filled="false"/>
+        <lineattr colour="Black" thick="1" type="Solid"/>
+        <textattr colour="Black" bold="false"/>
+        <text>desligado</text>
+        <ellipse w="88,000000" h="58,000000"/>
+        <token x="-10,000000" y="0,000000"/>
+
+	<marking x="0,000000" y="0,000000" hidden="false">
+          <snap snap_id="0" anchor.horizontal="0" anchor.vertical="0"/>
+        </marking>
+
+        <type id="ID89765">
+          <posattr x="38,500000" y="-126,000000"/>
+          <fillattr colour="White" pattern="Solid" filled="false"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr colour="Black" bold="false"/>
+          <text tool="CPN Tools" version="2.3.4">INT</text>
+        </type>
+
+        <initmark id="ID91168">
+          <posattr x="60,000000" y="-65,000000"/>
+          <fillattr colour="White" pattern="Solid" filled="false"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr colour="Black" bold="false"/>
+          <text tool="CPN Tools" version="2.3.4"/>
+        </initmark>
+
+      </place>
+
+
+// --------------------------------------------------------------       DTD   //
+
+      <place id="...">
+         <posattr .../> <!-- position -->
+         <fillattr .../> <!-- fill color -->
+         <lineattr .../> <!-- line width and color -->
+         <textattr .../> <!-- font and text color -->
+         <text>...</text> <!-- name -->
+         <ellipse .../> <!-- sets width and height -->
+         <token .../> <!-- position of round no of tokens -->
+         <marking .../> <!-- position (and whether hidden) of rectangular description of current marking -->
+         <type> <!-- color set -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+           <text>...</text>
+         </type>
+         <initmark> <!-- initial marking -->
+           <!-- like type -->
+         </initmark>
+         <fusioninfo id="..." name="..."> <!-- omit if not fusion  place -->
+           <posattr .../> <!-- position -->
+           <fillattr .../> <!-- fill color -->
+           <lineattr .../> <!-- line width and color -->
+           <textattr .../> <!-- font and text color -->
+         </fusioninfo>
+       </place>
