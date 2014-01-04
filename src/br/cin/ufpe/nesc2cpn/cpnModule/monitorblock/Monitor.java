@@ -4,6 +4,7 @@
  */
 package br.cin.ufpe.nesc2cpn.cpnModule.monitorblock;
 
+import br.cin.ufpe.nesc2cpn.cpnModule.IDControl;
 import br.cin.ufpe.nesc2cpn.cpnModule.globbox.Ml;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +17,7 @@ import java.util.Map;
  */
 public class Monitor
 {
-    private long    id                  = 123456;
+    private long    id;
     private String  name                = "monitorName";
     private int     type                = 1;
     private String  typeDescription     = "monitorTypeDescription";
@@ -28,6 +29,8 @@ public class Monitor
     
     public Monitor()
     {
+        id = IDControl.getInstance().getItemNextId();
+        
         node = new HashMap<Long, Long>();
         declaration = new ArrayList<Ml>();
         option = new HashMap<String, Object>();
