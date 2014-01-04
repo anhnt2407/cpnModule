@@ -52,37 +52,35 @@ public class MonitorBlock {
     private List<MonitorBlock> listMonitorBlock;
 
     
-    public MonitorBlock() {
-        monitorblock = new HashMap<String, List<Monitor>>();
-        monitor = new ArrayList<Monitor>();
+    public MonitorBlock() 
+    {
+        monitorblock     = new HashMap<String, List<Monitor>>();
+        monitor          = new ArrayList<Monitor>();
         listMonitorBlock = new ArrayList<MonitorBlock>();
 
     }
     
-    public MonitorBlock(MonitorBlock monitorBlockList) {
+    public MonitorBlock( MonitorBlock monitorBlockList )
+    {
+        monitorblock     = new HashMap<String,List<Monitor>>();
+        monitor          = new ArrayList<Monitor>();
         
-        monitorblock = new HashMap<String,List<Monitor>>();
-        monitor = new ArrayList<Monitor>();
         listMonitorBlock = new ArrayList<MonitorBlock>();
         listMonitorBlock.add(monitorBlockList);
-          
-        
-        
     } 
     
     
-    public MonitorBlock(String monitorBlockName, List<Monitor> listMonitor) {
-        
+    public MonitorBlock(String monitorBlockName, List<Monitor> listMonitor)
+    {
         monitorblock = new HashMap<String,List<Monitor>>();
         monitor = new ArrayList<Monitor>();
         //monitor=listMonitor;
+        
         monitorblock.put(monitorBlockName, listMonitor);
         //monitorblock.put(monitorBlockName, listMonitor);
+        
         listMonitorBlock = new ArrayList<MonitorBlock>();
         //listMonitorBlock.add(monitorBlockList);
-          
-        
-        
     } 
     
     public Map<String, List<Monitor>> getMonitorblock() {
