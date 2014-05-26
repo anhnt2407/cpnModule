@@ -17,7 +17,7 @@ public class CpnLoad
     private CPN cpn;
     private Node nodeRoot;
 
-    public CpnLoad(String filename) throws Exception
+    public CpnLoad( String filename ) throws Exception
     {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
